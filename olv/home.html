@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda - SmartSchool Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+  <nav class="navbar">
+    <a href="#home" class="logo">SmartSchool Assistant</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#input-prestasi">Input Prestasi</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+ <header class="banner">
+  <h1>Selamat Datang di SMAN 01 Muara Bungo</h1>
+  <p id="userInfo"></p>
+</header>
+
+  <section class="prestasi-list">
+    <h2>Prestasi Murid</h2>
+    <ul id="listPrestasi">
+      <!-- Daftar prestasi ditampilkan di sini -->
+    </ul>
+  </section>
+
+  <section class="input-prestasi">
+    <h2>Input Prestasi Baru</h2>
+    <form id="prestasiForm">
+      <input type="text" placeholder="Nama" id="namaPrestasi" required>
+      <input type="text" placeholder="Kelas" id="kelasPrestasi" required>
+      <input type="text" placeholder="Nama Prestasi" id="judulPrestasi" required>
+      <input type="file" id="fotoPrestasi" accept="image/*">
+      <button type="submit">Tambahkan Prestasi</button>
+    </form>
+  </section>
+<section class="contact" id="contact">
+  <h2>Hubungi Kami</h2>
+  <p><strong>Alamat:</strong> Jl. Prof. Sri Sudewi Sh. No.20, Pasir Putih, Kec. Rimbo Tengah, Kabupaten Bungo, Jambi</p>
+  <p><strong>Nomor Telepon:</strong> (0747) 21109</p>
+  <p><strong>Instagram:</strong> 
+    <a href="https://instagram.com/smansabungo.official" target="_blank" rel="noopener noreferrer">
+      @smansabungo.official
+    </a>
+  </p>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>

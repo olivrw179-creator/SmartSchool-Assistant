@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo kiri, menu kanan */
+  background-color: #8e9f80;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  user-select: none; /* agar teks tidak mudah disorot */
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #819174;
+}
+.auth-container {
+  width: 350px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 2px solid #abbf9b;
+  border-radius: 10px;
+  background-color: #f9cdd5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input, .form-box select {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #abbf9b;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #98aa89;
+}
+
+.hidden {
+  display: none;
+}
+
+.banner {
+  background: linear-gradient(135deg, #abbf9b, #f9cdd5);
+  color: #f1faee;
+  text-align: center;
+  padding: 40px 15px;
+  font-size: 1.8rem;
+  box-shadow: inset 0 -4px 15px rgba(0,0,0,0.2);
+  letter-spacing: 0.05em;
+}
+
+.banner h1 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.banner p {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+/* Sections */
+.prestasi-list, .input-prestasi, .contact {
+  background: #fff;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 35px;
+  border-radius: 12px;
+  border-left: 8px solid #f9cdd5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+.prestasi-list:hover, .input-prestasi:hover, .contact:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.prestasi-list h2, .input-prestasi h2, .contact h2 {
+  margin-bottom: 20px;
+  color: rgb(78, 77, 77);
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+}
+
+/* Form Inputs */
+.input-prestasi input[type="text"],
+.input-prestasi input[type="file"],
+.input-prestasi button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.input-prestasi input[type="text"]:focus,
+.input-prestasi input[type="file"]:focus {
+  border-color: #abbf9b;
+  outline: none;
+}
+
+.input-prestasi button {
+  background-color: #abbf9b;
+  color: #f1faee;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+.input-prestasi button:hover {
+  background-color: #98aa89;
+}
+
+/* Prestasi List */
+.prestasi-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prestasi-list ul li {
+  background-color: #f1faee;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  font-weight: 600;
+  color: #f9cdd5;
+  transition: background-color 0.3s;
+}
+
+.prestasi-list ul li:hover {
+  background-color: #f9cdd5;
+  color: #abbf9b;
+  cursor: default;
+}
+.contact {
+  background: #fff;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 35px;
+  border-radius: 12px;
+  border-left: 8px solid #f9cdd5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: rgba(0,0,0,0.0.1);
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.contact a {
+  color: #abbf9b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.contact a:hover {
+  color: #f9cdd5;
+  text-decoration: underline;
+}
+
+input[type="file"] {
+  border: none;
+}
